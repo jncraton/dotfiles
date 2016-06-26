@@ -1,4 +1,4 @@
-# Create symlinks (system specific)
+# Create symlinks (system specifhttps://bricks.stackexchange.com/users/login?ssrc=head&returnurl=http%3a%2f%2fbricks.stackexchange.com%2fic)
 sudo ln -s /media/jncraton/2CFAF2F9FAF2BDE0/Dropbox /dropbox
 
 # Symlink scite settings
@@ -11,6 +11,19 @@ sudo ln -s /dropbox/Programs/sys/home/User/.ssh ~/.ssh
 
 # Copy scripts to /bin
 sudo cp scripts/* /bin
+
+# Symlink home directories
+sudo rm -rf ~/Public
+sudo rm -rf ~/Templates
+sudo rm -rf ~/Videos
+sudo rm -rf ~/Music
+sudo ln -s /dropbox/music ~/Music
+sudo rm -rf ~/Pictures
+sudo ln -s /dropbox/photos ~/Pictures
+sudo rm -rf ~/Documents
+sudo ln -s /dropbox/documents ~/Documents
+sudo rm -rf ~/Downloads
+sudo ln -s /dropbox/temp ~/Downloads
 
 # Remove apps that I don't use
 yes | sudo apt-get --purge remove  \
@@ -68,6 +81,13 @@ xinput --set-prop "Razer Razer Diamondback Optical Mouse" "Device Accel Profile"
 
 # Install my favorites
 yes | sudo apt-get install wmctrl scite vlc p7zip-full nautilus-dropbox git
+
+# Veracrypt deps
+yes | sudo apt-get install dmsetup
+
+# Development deps
+yes | sudo apt-get install phantomjs nodejs python-pip sqlite3 libdbus-1-dev libxml2-dev libxslt1-dev libdbus-glib-1-dev
+pip install flask ofxparse ofxclient
 
 # Git config
 
