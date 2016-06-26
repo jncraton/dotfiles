@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wmctrl $1 || $1
