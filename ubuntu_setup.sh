@@ -73,6 +73,7 @@ yes | sudo apt-get install scite vlc p7zip-full nautilus-dropbox git
 
 git config --global user.email "jncraton@gmail.com"
 git config --global user.name "Jon Craton"
+git config --global push.default simple
 
 # Finish Dropbox install (GUI interaction required)
 dropbox start -i
