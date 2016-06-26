@@ -8,7 +8,7 @@ aisleriot gnome-mahjongg gnome-mines gnome-sudoku \
 `# Default Gnome apps that I do not use` \
 gnome-calculator gnome-calendar \
 `# Wallpapers and sounds` \
-ubuntu-sounds ubuntu-touch-sounds ubuntu-wallpapers \
+ubuntu-sounds ubuntu-touch-sounds \
 `# Email` \
  thunderbird \
 `# I do not RTM` \
