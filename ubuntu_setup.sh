@@ -9,7 +9,9 @@ sudo ln -s /dropbox/Programs/ /usr/share/scite
 sudo rm -rf ~/.ssh
 sudo ln -s /dropbox/Programs/sys/home/User/.ssh ~/.ssh
 
-# Symlink SSH settings
+# Copy scripts to /bin
+sudo cp scripts/* /bin
+
 # Remove apps that I don't use
 yes | sudo apt-get --purge remove  \
 libreoffice-core \
