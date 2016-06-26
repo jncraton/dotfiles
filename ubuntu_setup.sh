@@ -7,7 +7,7 @@ sudo ln -s /dropbox/Programs/ /usr/share/scite
 
 # Symlink ssh keys
 sudo rm -rf ~/.ssh
-sudo ln -s /dropbox/Programs/sys/home/User/.ssh ~/.ssh
+sudo ln -s /dropbox/programs/sys/home/User/.ssh ~/.ssh
 
 # Copy scripts to /bin
 sudo cp scripts/* /bin
