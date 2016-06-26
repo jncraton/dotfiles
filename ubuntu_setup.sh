@@ -65,7 +65,7 @@ xinput --set-prop "Razer Razer Diamondback Optical Mouse" "Device Accel Velocity
 xinput --set-prop "Razer Razer Diamondback Optical Mouse" "Device Accel Profile" -1
 
 # Install my favorites
-yes | sudo apt-get install scite vlc p7zip-full nautilus-dropbox git
+yes | sudo apt-get install wmctrl scite vlc p7zip-full nautilus-dropbox git
 
 # Git config
 
