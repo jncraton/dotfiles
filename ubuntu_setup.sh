@@ -1,3 +1,15 @@
+# Create symlinks (system specific)
+sudo ln -s /media/jncraton/2CFAF2F9FAF2BDE0/Dropbox /dropbox
+
+# Symlink scite settings
+sudo rm -rf /usr/share/scite
+sudo ln -s /dropbox/Programs/ /usr/share/scite
+
+# Symlink ssh keys
+sudo rm -rf ~/.ssh
+ln -s /dropbox/Programs/sys/home/User/.ssh ~/.ssh
+
+# Symlink SSH settings
 # Remove apps that I don't use
 yes | sudo apt-get --purge remove  \
 libreoffice-core \
@@ -56,6 +68,11 @@ xinput --set-prop "Razer Razer Diamondback Optical Mouse" "Device Accel Profile"
 
 # Install my favorites
 yes | sudo apt-get install scite vlc p7zip-full nautilus-dropbox git
+
+# Git config
+
+git config --global user.email "jncraton@gmail.com"
+git config --global user.name "Jon Craton"
 
 # Finish Dropbox install (GUI interaction required)
 dropbox start -i
