@@ -7,7 +7,7 @@ zeitgeist-core \
 aisleriot gnome-mahjongg gnome-mines gnome-sudoku \
 `# Default Gnome apps that I do not use` \
 gnome-calculator gnome-calendar \
-`# Wallpapers and sounds` \
+`# Sounds` \
 ubuntu-sounds ubuntu-touch-sounds \
 `# Email` \
  thunderbird \
@@ -15,8 +15,6 @@ ubuntu-sounds ubuntu-touch-sounds \
  gnome-user-guide ubuntu-docs \
 `# SSO plugins` \
  account-plugin-facebook account-plugin-flickr account-plugin-google \
-`# Bluetooth support` \
- bluez gnome-bluetooth indicator-bluetooth \
 `# Accessibility` \
  brltty \
 `# System testing` \
@@ -42,17 +40,22 @@ ubuntu-sounds ubuntu-touch-sounds \
 `# GUI update manager` \
  update-manager \
 `# Ubuntu browser` \
- webapp-container webbrowser-app
+ webapp-container webbrowser-app \
 `# Error reporting` \
  whoopsie
 # Remove leftovers
 yes | sudo apt-get autoremove
 sudo apt-get clean
 
+# This may have gotten removed
+yes | sudo apt-get install unity-control-center --no-install-recommends
+
+# Disable mouse acceleration
+xinput --set-prop "Razer Razer Diamondback Optical Mouse" "Device Accel Velocity Scaling" 1
+xinput --set-prop "Razer Razer Diamondback Optical Mouse" "Device Accel Profile" -1
+
 # Install my favorites
 yes | sudo apt-get install scite vlc p7zip-full nautilus-dropbox git
 
 # Finish Dropbox install (GUI interaction required)
 dropbox start -i
-
-
