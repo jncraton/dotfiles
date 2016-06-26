@@ -35,8 +35,6 @@ ubuntu-sounds ubuntu-touch-sounds \
  deja-dup \
 `# Example content` \
  example-content \
-`# Archive manager` \
- file-roller \
 `# Flash` \
  flashplugin-installer  \
 `# Onscreen keyboard` \
