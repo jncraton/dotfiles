@@ -9,6 +9,9 @@ sudo ln -s /dropbox/Programs/ /usr/share/scite
 sudo rm -rf ~/.ssh
 sudo ln -s /dropbox/programs/sys/home/User/.ssh ~/.ssh
 
+# Symlink dotfiles
+sudo ln -s /dropbox/dotfiles/.bashrc ~/.bashrc
+
 # Copy scripts to /bin
 sudo cp scripts/* /bin
 
