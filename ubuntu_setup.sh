@@ -78,10 +78,6 @@ sudo apt-get clean
 # This may have gotten removed
 yes | sudo apt-get install unity-control-center --no-install-recommends
 
-# Disable mouse acceleration
-xinput --set-prop "Razer Razer Diamondback Optical Mouse" "Device Accel Velocity Scaling" 1
-xinput --set-prop "Razer Razer Diamondback Optical Mouse" "Device Accel Profile" -1
-
 # Install my favorites
 yes | sudo apt-get install wmctrl scite vlc p7zip-full nautilus-dropbox git ffmpeg
 
