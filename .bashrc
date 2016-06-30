@@ -49,7 +49,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias ls='ls -lA --color=tty'
+alias ls='ls -lAh --color=tty'
 alias vim='scite'
 
 # enable programmable completion features (you don't need to enable
