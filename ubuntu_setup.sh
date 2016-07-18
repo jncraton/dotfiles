@@ -79,7 +79,7 @@ sudo apt-get clean
 yes | sudo apt-get install unity-control-center --no-install-recommends
 
 # Install my favorites
-yes | sudo apt-get install wmctrl scite vlc p7zip-full nautilus-dropbox git ffmpeg pinta abiword gnumeric
+yes | sudo apt-get install wmctrl scite vlc p7zip-full nautilus-dropbox git ffmpeg pinta abiword gnumeric libjpeg-turbo-progs jpegoptim 
 
 # Veracrypt deps
 yes | sudo apt-get install dmsetup
