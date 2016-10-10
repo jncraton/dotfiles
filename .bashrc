@@ -50,7 +50,10 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias ls='ls -lAh --color=tty'
-alias vim='scite'
+alias vim='micro'
+alias n='micro'
+alias e='micro'
+alias youtube-dl-mp3='youtube-dl -f bestaudio -i -x --audio-format mp3'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
