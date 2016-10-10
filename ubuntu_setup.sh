@@ -6,17 +6,6 @@ sudo ln -s /media/jncraton/30DE44BCDE447BDA/Dropbox /dropbox
 sudo rm -rf /usr/share/scite
 sudo ln -s /dropbox/Programs/ /usr/share/scite
 
-# Symlink ssh keys
-sudo rm -rf ~/.ssh
-sudo ln -s /dropbox/programs/sys/home/User/.ssh /root/.ssh
-sudo ln -s /dropbox/programs/sys/home/User/.ssh /home/jncraton/.ssh
-
-# Symlink dotfiles
-sudo ln -s /dropbox/dotfiles/.bashrc /root/.bashrc
-sudo ln -s /dropbox/dotfiles/.bashrc /home/jncraton/.bashrc
-sudo ln -s /dropbox/dotfiles/.config /root/.config
-sudo ln -s /dropbox/dotfiles/.config /home/jncraton/.config
-
 # Copy scripts to /bin
 sudo cp scripts/* /bin
 
