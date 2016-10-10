@@ -1,0 +1,78 @@
+#!/usr/bin/python
+# Usage: vtrans --remove-audio <filename> <start> <end>
+
+import sys
+from subprocess import call
+
+args = []
+flags = []
+resolution = 432
+
+for arg in sys.argv[1:]:
+  if not arg.startswith('-'):
+    args.append(arg)
+  else:
+    flags.append(arg)
+    if arg.endswith('p'):
+      resolution = arg[1:-1]
+
+filename = args[0]
+out_filename = '~' + filename + 'vtrans.mp4'
+
+backup_file = filename.split('/')
+backup_file[-1] = "~" + backup_file[-1]
+backup_file = "/".join(backup_file)
+
+call(["cp",filename,backup_file])
+
+command = ["ffmpeg", "-i", backup_file]
+
+start = False
+length = False
+
+filters = []
+
+speed = 'slower'
+if '--test' in flags:
+  speed = 'ultrafast'
+
+if '--rotate-cw' in flags:
+  filters.append("transpose=clock")
+
+if '--rotate-ccw' in flags:
+  filters.append("transpose=cclock")
+
+if '--crop-portrait' in flags:
+  filters.append("crop=432:432:24:80")
+
+if not '--no-resize' in flags:
+  if '--portrait' in flags:
+    filters.append("scale=%s:-1" % resolution)
+  else:
+    filters.append("scale=-1:%s" % resolution)
+
+if '--deshake' in flags:
+  filters.append("deshake=x=1:y=1:w=150:h=700:rx=64:ry=64:blocksize=64")
+  
+if filters:
+  command += ["-vf", ','.join(filters)]
+
+if len(args) > 1:
+  start = args[1]
+  end = args[2]
+  command.append("-ss")
+  command.append("00:%s" % str(start))
+  command.append("-t")
+  command.append("00:%s" % str(end))
+
+if '--remove-audio' in flags:
+  command += ['-an']
+else:
+  command += ["-c:a", "libfdk_aac", "-profile:a", "aac_he", "-vbr", "2"]
+
+command += ["-c:v", "libx265", "-preset", speed, "-crf", "28",out_filename]
+
+print ' '.join(command)
+
+if not call(command) and not '--test' in flags:
+  call(['mv',out_filename,filename])
