@@ -66,4 +66,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:/dropbox/dotfiles/scripts
+export PATH=$PATH:~/bin
