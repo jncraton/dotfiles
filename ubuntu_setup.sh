@@ -1,5 +1,6 @@
-# Create symlinks (system specifhttps://bricks.stackexchange.com/users/login?ssrc=head&returnurl=http%3a%2f%2fbricks.stackexchange.com%2fic)
+# Create symlinks (system speciffic)
 sudo ln -s /media/jncraton/2CFAF2F9FAF2BDE0/Dropbox /dropbox
+sudo ln -s /media/jncraton/30DE44BCDE447BDA/Dropbox /dropbox
 
 # Symlink scite settings
 sudo rm -rf /usr/share/scite
@@ -7,10 +8,14 @@ sudo ln -s /dropbox/Programs/ /usr/share/scite
 
 # Symlink ssh keys
 sudo rm -rf ~/.ssh
-sudo ln -s /dropbox/programs/sys/home/User/.ssh ~/.ssh
+sudo ln -s /dropbox/programs/sys/home/User/.ssh /root/.ssh
+sudo ln -s /dropbox/programs/sys/home/User/.ssh /home/jncraton/.ssh
 
 # Symlink dotfiles
-sudo ln -s /dropbox/dotfiles/.bashrc ~/.bashrc
+sudo ln -s /dropbox/dotfiles/.bashrc /root/.bashrc
+sudo ln -s /dropbox/dotfiles/.bashrc /home/jncraton/.bashrc
+sudo ln -s /dropbox/dotfiles/.config /root/.config
+sudo ln -s /dropbox/dotfiles/.config /home/jncraton/.config
 
 # Copy scripts to /bin
 sudo cp scripts/* /bin
@@ -85,7 +90,7 @@ yes | sudo apt-get install wmctrl scite vlc p7zip-full nautilus-dropbox git ffmp
 yes | sudo apt-get install dmsetup
 
 # Development deps
-yes | sudo apt-get install phantomjs nodejs python-pip sqlite3 libdbus-1-dev libxml2-dev libxslt1-dev libdbus-glib-1-dev
+yes | sudo apt-get install phantomjs nodejs python-pip sqlite3 libdbus-1-dev libxml2-dev libxslt1-dev libdbus-glib-1-dev pandoc
 pip install flask ofxparse ofxclient
 
 # Git config
