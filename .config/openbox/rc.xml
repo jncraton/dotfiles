@@ -157,7 +157,20 @@
           </action>
         </then>
         <else>
-          <action name="Maximize"/>
+          <action name="If">
+            <query target="focus">
+              <maximizedhorizontal>yes</maximizedhorizontal>
+              <maximizedvertical>yes</maximizedvertical>
+            </query>
+            <then>
+              <action name="MoveResizeTo">
+                <monitor>next</monitor>
+              </action>
+            </then>
+            <else>
+              <action name="Maximize"/>
+            </else>
+          </action>
         </else>
       </action>
     </keybind>
