@@ -1,1 +1,6 @@
+export PATH=$HOME/bin:$PATH
+firefox about:blank &
 ~/bin/every_minute.sh &
+amixer set Master 0% &
+amixer set Speaker 100% &
+amixer set Headphone 100% &

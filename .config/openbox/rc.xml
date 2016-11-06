@@ -7,6 +7,10 @@
   <focus>
     <focusNew>yes</focusNew>
     <followMouse>no</followMouse>
+    <focusDelay>0</focusDelay>
+    <raiseOnFocus>no</raiseOnFocus>
+    <focusLast>yes</focusLast>
+    <underMouse>no</underMouse>
   </focus>
   <placement>
     <policy>Smart</policy>
@@ -15,7 +19,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Orang</name>
+    <name>1977-Black</name>
     <titleLayout>CMIL</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
@@ -60,11 +64,16 @@
     <number>1</number>
     <firstdesk>1</firstdesk>
     <popupTime>0</popupTime>
+    <names/>
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>Nonpixel</popupShow>
     <popupPosition>Center</popupPosition>
+    <popupFixedPosition>
+      <x>0</x>
+      <y>0</y>
+    </popupFixedPosition>
   </resize>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
@@ -99,26 +108,77 @@
     </keybind>
     <keybind key="C-A-b">
       <action name="Execute">
-        <command>launch firefox firefox</command>
+        <command>~/bin/launch firefox firefox</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-e">
+      <action name="Execute">
+        <command>~/bin/launch "jncraton@gmail.com" "firefox -new-window https://mail.google.com"</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-c">
+      <action name="Execute">
+        <command>~/bin/launch "Google Calendar" "firefox -new-window https://calendar.google.com"</command>
       </action>
     </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
-        <command>launch xterm xterm</command>
+        <command>~/bin/launch xterm xterm</command>
       </action>
     </keybind>
     <keybind key="W-p">
       <action name="Execute">
-        <command>launch lxrandr lxrandr</command>
+        <command>~/bin/launch lxrandr lxrandr</command>
       </action>
     </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>slock</command>
+      </action>
+    </keybind>
+    <keybind key="grave">
+      <keybind key="c">
+        <action name="Execute">
+          <command>xdotool type --delay 1 "cMy calendar is available here:&#13;&#13;https://joncraton.org/calendar&#13;&#13;Just let me know a time that works for you."</command>
+        </action>
+      </keybind>
+    </keybind>
     <keybind key="W-Up">
-      <action name="Maximize"/>
+      <action name="If">
+        <query target="focus">
+          <maximizedhorizontal>no</maximizedhorizontal>
+          <maximizedvertical>yes</maximizedvertical>
+        </query>
+        <then>
+          <action name="Unmaximize"/>
+          <action name="MoveResizeTo">
+            <y>0</y>
+            <height>50%</height>
+          </action>
+        </then>
+        <else>
+          <action name="Maximize"/>
+        </else>
+      </action>
     </keybind>
     <keybind key="W-Down">
-      <action name="MoveResizeTo">
-        <!-- move to next monitor -->
-        <monitor>next</monitor>
+      <action name="If">
+        <query target="focus">
+          <maximizedhorizontal>no</maximizedhorizontal>
+          <maximizedvertical>yes</maximizedvertical>
+        </query>
+        <then>
+          <action name="Unmaximize"/>
+          <action name="MoveResizeTo">
+            <y>-0</y>
+            <height>50%</height>
+          </action>
+        </then>
+        <else>
+          <action name="MoveResizeTo">
+            <monitor>next</monitor>
+          </action>
+        </else>
       </action>
     </keybind>
     <keybind key="W-Left">
@@ -128,6 +188,9 @@
         <width>50%</width>
         <height>100%</height>
       </action>
+      <action name="Maximize">
+        <direction>vertical</direction>
+      </action>
     </keybind>
     <keybind key="W-Right">
       <action name="Unmaximize"/>
@@ -135,6 +198,19 @@
         <x>-0</x>
         <width>50%</width>
         <height>100%</height>
+      </action>
+      <action name="Maximize">
+        <direction>vertical</direction>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>amixer set Master 10%+</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>amixer set Master 10%-</command>
       </action>
     </keybind>
   </keyboard>
@@ -224,7 +300,23 @@
   <applications>
     <application class="*">
       <decor>no</decor>
-      <maximized>true</maximized>
     </application>
   </applications>
+  <margins>
+    <left>0</left>
+    <right>0</right>
+    <top>0</top>
+    <bottom>0</bottom>
+  </margins>
+  <dock>
+    <position>TopLeft</position>
+    <floatingX>0</floatingX>
+    <floatingY>0</floatingY>
+    <stacking>Above</stacking>
+    <direction>Vertical</direction>
+    <noStrut>no</noStrut>
+    <autoHide>no</autoHide>
+    <hideDelay>300</hideDelay>
+    <showDelay>300</showDelay>
+  </dock>
 </openbox_config>
