@@ -1,3 +1,5 @@
 [user]
 	name = Jon Craton
 	email = jncraton@gmail.com
+[credential]
+	helper = cache
