@@ -22,58 +22,11 @@ sudo ln -s /dropbox/documents ~/Documents
 sudo rm -rf ~/Downloads
 sudo ln -s /dropbox/temp ~/Downloads
 
-# Remove apps that I don't use
-yes | sudo apt-get --purge remove  \
-libreoffice-core \
-`# Logger` \
-zeitgeist-core \
-`# Games` \
-aisleriot gnome-mahjongg gnome-mines gnome-sudoku \
-`# Default Gnome apps that I do not use` \
-gnome-calculator gnome-calendar \
-`# Sounds` \
-ubuntu-sounds ubuntu-touch-sounds \
-`# Email` \
- thunderbird \
-`# I do not RTM` \
- gnome-user-guide ubuntu-docs \
-`# SSO plugins` \
- account-plugin-facebook account-plugin-flickr account-plugin-google \
-`# Accessibility` \
- brltty \
-`# System testing` \
- checkbox-converged checkbox-gui \
-`# Backup` \
- deja-dup \
-`# Example content` \
- example-content \
-`# Flash` \
- flashplugin-installer  \
-`# Onscreen keyboard` \
- onboard \
-`# Music player` \
- rhythmbox \
-`# Media player` \
- totem \
-`# Text editor` \
- gedit \
-`# GUI BT Client` \
- transmission-common \
-`# GUI update manager` \
- update-manager \
-`# Ubuntu browser` \
- webapp-container webbrowser-app \
-`# Error reporting` \
- whoopsie
-# Remove leftovers
-yes | sudo apt-get autoremove
-sudo apt-get clean
-
 # This may have gotten removed
 yes | sudo apt-get install unity-control-center --no-install-recommends
 
 # Install my favorites
-yes | sudo apt-get install wmctrl scite vlc p7zip-full nautilus-dropbox git ffmpeg pinta abiword gnumeric libjpeg-turbo-progs jpegoptim 
+yes | sudo apt-get install openssh-server wmctrl scite vlc p7zip-full nautilus-dropbox git ffmpeg pinta abiword gnumeric libjpeg-turbo-progs jpegoptim 
 
 # Veracrypt deps
 yes | sudo apt-get install dmsetup
@@ -90,23 +43,3 @@ git config --global push.default simple
 
 # Finish Dropbox install (GUI interaction required)
 dropbox start -i
-
-# Build ffmpeg
-sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev \
-  libsdl1.2-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev \
-  libxcb-xfixes0-dev pkg-config texinfo zlib1g-dev yasm libmp3lame-dev libx264-dev libx265-dev && \
-cd /tmp && \
-wget -O fdk-aac.tar.gz https://github.com/mstorsjo/fdk-aac/tarball/master && \
-tar xzvf fdk-aac.tar.gz && \
-cd mstorsjo-fdk-aac* && \
-autoreconf -fiv && \
-./configure --disable-shared && \
-sudo make && sudo make install && sudo make distclean && \
-sudo cp /usr/local/lib/* /usr/lib && \
-git clone git://source.ffmpeg.org/ffmpeg.git && \
-cd ffmpeg && \
-./configure --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-nonfree --enable-libfdk-aac && \
-sudo make && \
-sudo make install
-
-
