@@ -1,3 +1,11 @@
 {
-    "CtrlG": "JumpLine"
+  "CtrlG": "JumpLine",
+  "CtrlW": "Quit",
+  "F5": "ShellMode",
+  "CtrlLeft": "WordLeft",
+  "CtrlRight": "WordRight",
+  "CtrlH": "DeleteWordLeft",
+  "CtrlBackslash": "NextTab,NextSplit",
+  "CtrlTab": "NextTab,NextSplit",
+  "CtrlP": "GotoAnything"
 }
