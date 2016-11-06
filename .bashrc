@@ -23,24 +23,23 @@ shopt -s checkwinsize
 
 PS1='\u:\w\$ '
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
 # aliases
-alias ls='ls -lAh --color=tty'
+alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off' 
+alias ls='ls -gh'
+alias rm='rm --one-file-system -I'
 alias vim='micro'
 alias nano='micro'
 alias n='micro'
 alias e='micro'
 alias youtube-dl-mp3='youtube-dl -f bestaudio -i -x --audio-format mp3'
+alias git-crush='git reflog expire --all --expire=now && git gc --prune=now --aggressive'
+alias feh='feh -Z -F'
+alias smbclient='smbclient -U houghton\\jonathan.craton'
 
 export PATH=$PATH:~/bin
+export EDITOR="/usr/local/bin/micro"
+mkdir -p ~/go
+export GOPATH=~/go
+export GOBIN=~/go/bin
+
+transset -a .8 > /dev/null 2> /dev/null
