@@ -24,7 +24,8 @@ shopt -s checkwinsize
 PS1='\u:\w\$ '
 
 # aliases
-alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off' 
+alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off'
+alias xzmax='XZ_OPT=-9e tar --verbose --create --xz --file'
 alias ls='ls -gh'
 alias rm='rm --one-file-system -I'
 alias vim='micro'
@@ -35,6 +36,8 @@ alias youtube-dl-mp3='youtube-dl -f bestaudio -i -x --audio-format mp3'
 alias git-crush='git reflog expire --all --expire=now && git gc --prune=now --aggressive'
 alias feh='feh -Z -F'
 alias smbclient='smbclient -U houghton\\jonathan.craton'
+alias aria2c16='aria2c -j 16 -x 16 -s 16 -k 4M'
+alias clip='xclip -i -selection clipboard'
 
 export PATH=$PATH:~/bin
 export EDITOR="/usr/local/bin/micro"
