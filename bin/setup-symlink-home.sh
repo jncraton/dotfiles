@@ -34,6 +34,8 @@ ln -sf /dropbox/home/.gitconfig /home/jncraton/.gitconfig
 sudo ln -sf /dropbox/home/.Xresources /root/.Xresources
 ln -sf /dropbox/home/.Xresources /home/jncraton/.Xresources
 
+ln -sf /dropbox/home/.pinerc /home/jncraton/.pinerc
+
 sudo rm -f /root/bin
 sudo ln -sf /dropbox/home/bin /root/bin
 sudo rm -f /home/jncraton/bin
@@ -51,6 +53,8 @@ sudo rm -f /home/jncraton/pictures
 sudo rm -f /home/jncraton/photos
 sudo rm -f /home/jncraton/documents
 sudo rm -f /home/jncraton/tmp
+sudo rm -f /home/jncraton/gdrive
+ln -sf /dropbox/gdrive /home/jncraton/gdrive
 ln -sf /dropbox/music /home/jncraton/music
 ln -sf /dropbox/photos /home/jncraton/photos
 ln -sf /dropbox/documents /home/jncraton/documents
