@@ -8,18 +8,18 @@
         "tabsize": 4,
         "tabstospaces": false
     },
-    "autoclose": true,
+    "autoclose": false,
     "autoindent": true,
     "autosave": false,
     "colorcolumn": 73,
     "colorscheme": "zenburn",
-    "cursorline": true,
+    "cursorline": false,
     "gofmt": true,
     "goimports": false,
     "ignorecase": true,
     "indentchar": " ",
     "infobar": true,
-    "linter": true,
+    "linter": false,
     "makefile": {
         "indentchar": "\u0009",
         "tabstospaces": false
@@ -28,14 +28,14 @@
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
     ],
     "pluginrepos": [],
-    "ruler": true,
-    "savecursor": true,
+    "ruler": false,
+    "savecursor": false,
     "saveundo": false,
     "scrollmargin": 5,
     "scrollspeed": 5,
     "softwrap": true,
     "statusline": true,
-    "syntax": true,
+    "syntax": false,
     "tabsize": 2,
     "tabstospaces": true
 }
