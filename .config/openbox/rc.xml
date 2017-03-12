@@ -163,9 +163,11 @@
               <maximizedvertical>yes</maximizedvertical>
             </query>
             <then>
+              <action name="Unmaximize"/>
               <action name="MoveResizeTo">
                 <monitor>next</monitor>
               </action>
+              <action name="Maximize"/>
             </then>
             <else>
               <action name="Maximize"/>
@@ -201,9 +203,6 @@
         <width>50%</width>
         <height>100%</height>
       </action>
-      <action name="Maximize">
-        <direction>vertical</direction>
-      </action>
     </keybind>
     <keybind key="W-Right">
       <action name="Unmaximize"/>
@@ -211,9 +210,6 @@
         <x>-0</x>
         <width>50%</width>
         <height>100%</height>
-      </action>
-      <action name="Maximize">
-        <direction>vertical</direction>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
