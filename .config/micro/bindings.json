@@ -6,6 +6,5 @@
   "CtrlRight": "WordRight",
   "CtrlH": "DeleteWordLeft",
   "CtrlBackslash": "NextTab,NextSplit",
-  "CtrlTab": "NextTab,NextSplit",
-  "CtrlP": "GotoAnything"
+  "CtrlTab": "NextTab,NextSplit"
 }

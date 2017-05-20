@@ -26,7 +26,7 @@ sudo ln -s /dropbox/temp ~/Downloads
 yes | sudo apt-get install unity-control-center --no-install-recommends
 
 # Install my favorites
-yes | sudo apt-get install openssh-server wmctrl scite vlc p7zip-full nautilus-dropbox git ffmpeg pinta abiword gnumeric libjpeg-turbo-progs jpegoptim 
+yes | sudo apt-get install openssh-server wmctrl scite vlc nautilus-dropbox git ffmpeg abiword gnumeric libjpeg-turbo-progs jpegoptim 
 
 # Veracrypt deps
 yes | sudo apt-get install dmsetup

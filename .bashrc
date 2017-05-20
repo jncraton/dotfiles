@@ -38,6 +38,11 @@ alias feh='feh -Z -F'
 alias smbclient='smbclient -U houghton\\jonathan.craton'
 alias aria2c16='aria2c -j 16 -x 16 -s 16 -k 4M'
 alias clip='xclip -i -selection clipboard'
+alias vera-mount='veracrypt "/dropbox/share/Jon and Karin/finance/secure.hc"'
+alias comp-pdf='gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -sOutputFile=-'
+alias weather='curl wttr.in/'
+alias rclone='rclone --exclude "*.pyc" --exclude "__pycache__"'
+alias f='find . -not -ipath "*.git/*" -not -ipath "*/node_modules/*" -not -ipath "*/__pycache__/*" -not -iname "*.pyc"'
 
 export PATH=$PATH:~/bin
 export EDITOR="/usr/local/bin/micro"
@@ -46,3 +51,4 @@ export GOPATH=~/go
 export GOBIN=~/go/bin
 
 transset -a .8 > /dev/null 2> /dev/null
+GLOBIGNORE=".:.."

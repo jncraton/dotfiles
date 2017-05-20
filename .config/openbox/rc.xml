@@ -136,7 +136,7 @@
         <command>slock</command>
       </action>
     </keybind>
-    <keybind key="grave">
+    <keybind key="C-grave">
       <keybind key="c">
         <action name="Execute">
           <command>xdotool type --delay 1 "cMy calendar is available here:&#13;&#13;https://joncraton.org/calendar&#13;&#13;Just let me know a time that works for you."</command>

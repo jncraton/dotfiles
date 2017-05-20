@@ -24,10 +24,6 @@
         "indentchar": "\u0009",
         "tabstospaces": false
     },
-    "pluginchannels": [
-        "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
-    ],
-    "pluginrepos": [],
     "ruler": false,
     "savecursor": false,
     "saveundo": false,
