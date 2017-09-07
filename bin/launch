@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo focusing $1 or running $2
-
-wmctrl -a $1 || wmctrl -x -a $1 || $2
