@@ -1,10 +1,10 @@
 {
     "*.go": {
-        "indentchar": "\u0009",
+        "indentchar": "\t",
         "tabstospaces": false
     },
     "*.tsv": {
-        "indentchar": "\u0009",
+        "indentchar": "\t",
         "tabsize": 4,
         "tabstospaces": false
     },
@@ -14,24 +14,39 @@
     "colorcolumn": 73,
     "colorscheme": "zenburn",
     "cursorline": false,
+    "eofnewline": false,
+    "fileformat": "unix",
+    "ftoptions": true,
     "gofmt": true,
     "goimports": false,
     "ignorecase": true,
     "indentchar": " ",
     "infobar": true,
+    "keepautoindent": false,
     "linter": false,
     "makefile": {
-        "indentchar": "\u0009",
+        "indentchar": "\t",
         "tabstospaces": false
     },
+    "mouse": true,
+    "pluginchannels": [
+        "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
+    ],
+    "pluginrepos": [],
+    "rmtrailingws": false,
     "ruler": false,
     "savecursor": false,
     "saveundo": false,
     "scrollmargin": 5,
     "scrollspeed": 5,
     "softwrap": true,
+    "splitBottom": true,
+    "splitRight": true,
     "statusline": true,
     "syntax": false,
+    "tabmovement": false,
     "tabsize": 2,
-    "tabstospaces": true
+    "tabstospaces": true,
+    "termtitle": false,
+    "useprimary": true
 }
