@@ -113,7 +113,7 @@
     </keybind>
     <keybind key="C-A-e">
       <action name="Execute">
-        <command>~/bin/launch "jncraton@gmail.com" "firefox -new-window https://mail.google.com"</command>
+        <command>~/bin/launch "jncraton@gmail.com" "firefox -new-window https://inbox.google.com"</command>
       </action>
     </keybind>
     <keybind key="C-A-c">
@@ -134,6 +134,11 @@
     <keybind key="W-l">
       <action name="Execute">
         <command>slock</command>
+      </action>
+    </keybind>
+    <keybind key="W-Print">
+      <action name="Execute">
+        <command>scrot</command>
       </action>
     </keybind>
     <keybind key="C-grave">
