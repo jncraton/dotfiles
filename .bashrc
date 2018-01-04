@@ -24,6 +24,7 @@ shopt -s checkwinsize
 PS1='\u:\w\$ '
 
 # aliases
+alias gotty='gotty --permit-write --address 127.0.0.1 tmux'
 alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off'
 alias xzmax='XZ_OPT=-9e tar --verbose --create --xz --file'
 alias ls='ls -gh'
