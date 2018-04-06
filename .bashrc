@@ -24,10 +24,11 @@ shopt -s checkwinsize
 PS1='\u:\w\$ '
 
 # aliases
+alias watch='watch -n .1'
 alias gotty='gotty --permit-write --address 127.0.0.1 tmux'
 alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off'
 alias xzmax='XZ_OPT=-9e tar --verbose --create --xz --file'
-alias ls='ls -gh'
+alias ls='ls -gh --color=auto'
 alias rm='rm --one-file-system -I'
 alias n='TERM=xterm micro'
 alias ydmp3='youtube-dl -f bestaudio -i -x --audio-format mp3'
@@ -40,7 +41,8 @@ alias clip='xclip -i -selection clipboard'
 alias vera-mount='veracrypt "/dropbox/share/Jon and Karin/finance/secure.hc"'
 alias comp-pdf='gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -sOutputFile=-'
 alias weather='curl wttr.in/'
-alias rclone='rclone --exclude "*.pyc" --exclude "__pycache__"'
+#alias rclone='rclone --exclude "*.pyc" --exclude "__pycache__"'
+#alias rclone='rclone --backup-dir ~/.rclonebak'
 alias f='find . -not -ipath "*/.git/*" -not -ipath "*/.cargo/*" -not -ipath "*/node_modules/*" -not -ipath "*/__pycache__/*" -not -iname "*.pyc"'
 
 export PATH=$PATH:~/bin
@@ -51,5 +53,3 @@ export GOBIN=~/go/bin
 
 transset -a .8 > /dev/null 2> /dev/null
 GLOBIGNORE=".:.."
-
-xrdb ~/.Xresources
