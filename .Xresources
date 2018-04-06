@@ -1,3 +1,5 @@
+xterm*termName: xterm-256color
+
 ! Properly send Alt to apps
 xterm*metaSendsEscape: true
 xterm*eightBitInput: false
