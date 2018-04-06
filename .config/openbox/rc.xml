@@ -146,6 +146,11 @@
         <command>scrot</command>
       </action>
     </keybind>
+    <keybind key="W-r">
+      <action name="Execute">
+        <command>gmrun</command>
+      </action>
+    </keybind>
     <keybind key="C-grave">
       <keybind key="c">
         <action name="Execute">
