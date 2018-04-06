@@ -3,3 +3,4 @@ export PATH=$HOME/bin:$PATH
 amixer set Master 0% &
 amixer set Speaker 100% &
 amixer set Headphone 100% &
+xterm -maximize -e "tmux a"
