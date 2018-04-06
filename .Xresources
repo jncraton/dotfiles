@@ -2,7 +2,9 @@
 xterm*metaSendsEscape: true
 xterm*eightBitInput: false
 
-xterm*faceName: Noto Sans Mono:size=10:antialias=false
+xterm*faceName: Noto Sans Mono:size=9:antialias=false
+!xterm*faceNameDoubleSize: Noto Sans Mono CJK JP:size=9:antialias=false
+XTerm*scaleHeight: 1.05
 
 ! Solarized color scheme for the X Window System
 ! http://ethanschoonover.com/solarized
