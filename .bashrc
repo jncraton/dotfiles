@@ -21,7 +21,10 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-PS1='\u:\w\$ '
+PS1='\u@\h:\w\$ '
+
+# Git aliases
+git config --global alias.log "log --oneline --decorate --all --graph --stat"
 
 # aliases
 alias watch='watch -n .1'
