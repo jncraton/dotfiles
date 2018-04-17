@@ -3,3 +3,5 @@
 	email = jncraton@gmail.com
 [credential]
 	helper = cache
+[alias]
+	lg = log --oneline --decorate --all --graph --stat
