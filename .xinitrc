@@ -4,6 +4,15 @@ xbacklight -set 1
 pulseaudio --start
 xhost +
 
+amixer set Master 0%
+amixer set Master unmute
+amixer set Headphone 100%
+amixer set Headphone unmute
+amixer set Speaker 100%
+amixer set Speaker unmute
+amixer set PCM 100%
+amixer set PCM unmute
+
 # Set Capslock to compose key
 setxkbmap -option compose:caps
 
