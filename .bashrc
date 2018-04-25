@@ -23,9 +23,6 @@ shopt -s checkwinsize
 
 PS1='\u@\h:\w\$ '
 
-# Git aliases
-git config --global alias.log "log --oneline --decorate --all --graph --stat"
-
 # aliases
 alias watch='watch -n .1'
 alias gotty='gotty --permit-write --address 127.0.0.1 tmux'
