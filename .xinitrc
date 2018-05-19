@@ -10,6 +10,8 @@ amixer set Headphone 100%
 amixer set Headphone unmute
 amixer set Speaker 100%
 amixer set Speaker unmute
+amixer set Speaker+LO 100%
+amixer set Speaker+LO unmute
 amixer set PCM 100%
 amixer set PCM unmute
 
