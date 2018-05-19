@@ -24,6 +24,8 @@ shopt -s checkwinsize
 PS1='\u@\h:\w\$ '
 
 # aliases
+alias gistup='gistup --private'
+alias pandoc='pandoc --extract-media . '
 alias watch='watch -n .1'
 alias gotty='gotty --permit-write --address 127.0.0.1 tmux'
 alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off'
@@ -38,7 +40,7 @@ alias feh='feh -Z -F'
 alias smbclient='smbclient -U houghton\\jonathan.craton'
 alias aria2c16='aria2c -j 16 -x 16 -s 16 -k 4M'
 alias clip='xclip -i -selection clipboard'
-alias vera-mount='veracrypt "/dropbox/share/Jon and Karin/finance/secure.hc"'
+alias vera-mount='veracrypt "/dropbox/share/Jon and Karin/finance/secure.hc" --mount-options=timestamp'
 alias comp-pdf='gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -sOutputFile=-'
 alias weather='curl wttr.in/'
 #alias rclone='rclone --exclude "*.pyc" --exclude "__pycache__"'
