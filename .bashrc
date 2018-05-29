@@ -47,7 +47,7 @@ alias weather='curl wttr.in/'
 #alias rclone='rclone --backup-dir ~/.rclonebak'
 alias f='find . -not -ipath "*/.git/*" -not -ipath "*/.cargo/*" -not -ipath "*/node_modules/*" -not -ipath "*/__pycache__/*" -not -iname "*.pyc"'
 
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/.local/bin
 export EDITOR="/usr/local/bin/micro"
 mkdir -p ~/go
 export GOPATH=~/go
