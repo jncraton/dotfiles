@@ -5,8 +5,8 @@
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
   <focus>
-    <focusNew>yes</focusNew>
-    <followMouse>no</followMouse>
+    <focusNew>no</focusNew>
+    <followMouse>yes</followMouse>
     <focusDelay>0</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
     <focusLast>yes</focusLast>
@@ -111,6 +111,11 @@
         <command>~/bin/launch firefox firefox</command>
       </action>
     </keybind>
+    <keybind key="F3">
+      <action name="Execute">
+        <command>~/bin/launch firefox firefox</command>
+      </action>
+    </keybind>
     <keybind key="C-A-e">
       <action name="Execute">
         <command>~/bin/launch "jncraton@gmail.com" "firefox -new-window https://inbox.google.com"</command>
@@ -122,6 +127,11 @@
       </action>
     </keybind>
     <keybind key="C-A-t">
+      <action name="Execute">
+        <command>~/bin/launch xterm xterm</command>
+      </action>
+    </keybind>
+    <keybind key="F2">
       <action name="Execute">
         <command>~/bin/launch xterm xterm</command>
       </action>
