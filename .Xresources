@@ -47,3 +47,6 @@ XTerm*scaleHeight: 1.05
 !*color12:                 #839496
 !*color14:                 #93a1a1
 !*color15:                 #eee8d5
+
+XTerm.vt100.translations: #override \n\
+    Ctrl <Key>V: insert-selection(CLIPBOARD)
