@@ -24,6 +24,7 @@ shopt -s checkwinsize
 PS1='\u@\h:\w\$ '
 
 # aliases
+alias vlcweb='cvlc --intf http --http-password letmein'
 alias gistup='gistup --private'
 alias pandoc='pandoc --extract-media . '
 alias watch='watch -n .1'
