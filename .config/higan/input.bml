@@ -1,14 +1,14 @@
 Famicom
   Port1
     Controller
-      Up: None
-      Down: None
-      Left: None
-      Right: None
-      B: None
-      A: None
-      Select: None
-      Start: None
+      Up: 1/Button/W
+      Down: 1/Button/S
+      Left: 1/Button/A
+      Right: 1/Button/D
+      B: 1/Button/LeftShift
+      A: 1/Button/Spacebar
+      Select: 1/Button/Tab
+      Start: 1/Button/Return
   Port2
     Controller
       Up: None
@@ -197,16 +197,16 @@ GameBoy
 GameBoyAdvance
   Device
     Controller
-      Up: None
-      Down: None
-      Left: None
-      Right: None
-      B: None
-      A: None
-      L: None
-      R: None
-      Select: None
-      Start: None
+      Up: 1/Button/W
+      Down: 1/Button/S
+      Left: 1/Button/A
+      Right: 1/Button/D
+      B: 1/Button/LeftShift
+      A: 1/Button/Spacebar
+      L: 1/Button/Q
+      R: 1/Button/E,1/Button/LeftAlt
+      Select: 1/Button/Tab
+      Start: 1/Button/Return
       Rumble: None
 
 Hotkey
