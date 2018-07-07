@@ -1,15 +1,21 @@
-personal_ws-1.1 en 14 
+personal_ws-1.1 en 20 
 STDOUT
 tmpsrc
 pseudocode
 subprocess
 redeclared
 goto
+interoperability
 cpp
+RAII
 NameError
 runtime
+GC
 os
 Craton
+deallocated
 src
 th
 dropbox
+ptr
+ABI
