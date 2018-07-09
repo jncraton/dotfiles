@@ -27,13 +27,13 @@ SuperFamicom
       Down: 1/Button/S
       Left: 1/Button/A
       Right: 1/Button/D
-      B: 1/Button/Enter
-      A: 1/Button/Keypad6
-      Y: 1/Button/Keypad3
+      B: 1/Button/Spacebar
+      A: 1/Button/LeftAlt
+      Y: 1/Button/LeftShift
       X: None
       L: None
       R: None
-      Select: 1/Button/Spacebar
+      Select: None
       Start: 1/Button/Return
     Multitap
       Port1-Up: None
