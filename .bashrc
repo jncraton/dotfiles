@@ -46,6 +46,7 @@ alias weather='curl wttr.in/'
 #alias rclone='rclone --exclude "*.pyc" --exclude "__pycache__"'
 #alias rclone='rclone --backup-dir ~/.rclonebak'
 alias f='find . -not -ipath "*/.git/*" -not -ipath "*/.cargo/*" -not -ipath "*/node_modules/*" -not -ipath "*/__pycache__/*" -not -iname "*.pyc"'
+alias spellcheck='aspell -c --dont-backup'
 
 export PATH=$PATH:~/bin:~/.local/bin
 export EDITOR="/usr/local/bin/micro"
