@@ -1,12 +1,12 @@
-<g> <a> : "α" U03B1
-<g> <A> : "Α" U0391
-<g> <a> : "α" U03B1
-<g> <B> : "Β" U0392
-<g> <b> : "β" U03B2
-<g> <D> : "Δ" U0394
-<g> <E> : "Ɛ" U0190
-<g> <e> : "ɛ" U025B
-<g> <G> : "Γ" U0393
-<g> <g> : "γ" U03B3
-<g> <S> : "Σ" U03A3
-<g> <s> : "σ" U03C3
+<Multi_key> <g> <a> : "α" U03B1
+<Multi_key> <g> <A> : "Α" U0391
+<Multi_key> <g> <a> : "α" U03B1
+<Multi_key> <g> <B> : "Β" U0392
+<Multi_key> <g> <b> : "β" U03B2
+<Multi_key> <g> <D> : "Δ" U0394
+<Multi_key> <g> <E> : "Ɛ" U0190
+<Multi_key> <g> <e> : "ɛ" U025B
+<Multi_key> <g> <G> : "Γ" U0393
+<Multi_key> <g> <g> : "γ" U03B3
+<Multi_key> <g> <S> : "Σ" U03A3
+<Multi_key> <g> <s> : "σ" U03C3
