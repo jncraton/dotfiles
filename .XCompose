@@ -1,3 +1,5 @@
+include "%L"
+
 <Multi_key> <g> <a> : "α" U03B1
 <Multi_key> <g> <A> : "Α" U0391
 <Multi_key> <g> <a> : "α" U03B1
