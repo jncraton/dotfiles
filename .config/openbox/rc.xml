@@ -6,7 +6,7 @@
   </resistance>
   <focus>
     <focusNew>no</focusNew>
-    <followMouse>yes</followMouse>
+    <followMouse>no</followMouse>
     <focusDelay>0</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
     <focusLast>yes</focusLast>

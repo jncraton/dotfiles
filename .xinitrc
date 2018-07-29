@@ -19,9 +19,9 @@ amixer set PCM unmute
 setxkbmap -option compose:caps
 
 # Touchpad settings
-synclient VertEdgeScroll=0
+synclient VertEdgeScroll=1
 synclient HorizEdgeScroll=0
-synclient VertTwoFingerScroll=0
+synclient VertTwoFingerScroll=1
 synclient HorizTwoFingerScroll=0
 synclient MaxTapTime=0
 synclient CoastingSpeed=0
