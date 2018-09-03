@@ -22,8 +22,11 @@ include "%L"
 <Multi_key> <g> <t> : "θ" U03B8
 
 <Multi_key> <m> <n> : "¬" U00AC
+<Multi_key> <m> <n> : "!" U00AC
 <Multi_key> <m> <d> : "·" U00B7
 <Multi_key> <m> <.> : "·" U00B7
+<Multi_key> <m> <x> : "×" U00D7
+<Multi_key> <m> <m> : "×" U00D7
 <Multi_key> <m> <a> : "∧" U2227
 <Multi_key> <m> <o> : "∨" U2228
 <Multi_key> <m> <i> : "∩" U2229
