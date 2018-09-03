@@ -31,3 +31,8 @@ include "%L"
 <Multi_key> <m> <o> : "∨" U2228
 <Multi_key> <m> <i> : "∩" U2229
 <Multi_key> <m> <u> : "∪" U222A
+<Multi_key> <m> <e> : "∈" U2208
+
+<Multi_key> <d> <r> : "ℝ" U211D
+<Multi_key> <d> <n> : "ℕ" U2115
+<Multi_key> <d> <z> : "ℤ" U2124
