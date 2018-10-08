@@ -5,3 +5,5 @@
 	helper = cache
 [alias]
 	lg = log --oneline --decorate --all --graph --stat
+[core]
+	filemode = false
