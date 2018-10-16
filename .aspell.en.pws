@@ -1,7 +1,8 @@
-personal_ws-1.1 en 68 
+personal_ws-1.1 en 77 
 redeclared
 ptr
 STDOUT
+sympy
 th
 subprocess
 dct
@@ -20,19 +21,25 @@ seaborn
 pseudocode
 summand
 tmpsrc
+linalg
 scalable
 GC
+tex
 deallocated
 graphemes
+iff
 RAII
+eigenvectors
 whitespace
 xlabel
 cpp
+eigenvector
 fftpack
-goto
 paralellize
+goto
 enums
 sns
+eigenvects
 src
 tuples
 recurses
@@ -60,8 +67,10 @@ downsample
 doctest
 np
 frac
+vmatrix
 Theora
 os
+LAPACK
 allclose
 radix
 pyplot
