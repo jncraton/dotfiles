@@ -1,8 +1,8 @@
-personal_ws-1.1 en 77 
+personal_ws-1.1 en 79 
 redeclared
 ptr
-STDOUT
 sympy
+STDOUT
 th
 subprocess
 dct
@@ -28,14 +28,15 @@ tex
 deallocated
 graphemes
 iff
-RAII
 eigenvectors
+RAII
 whitespace
 xlabel
-cpp
 eigenvector
+cpp
 fftpack
 paralellize
+CSC
 goto
 enums
 sns
@@ -46,6 +47,7 @@ recurses
 IEEE
 repurposed
 MPEG
+png
 NameError
 plt
 scipy
