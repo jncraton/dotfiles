@@ -5,7 +5,7 @@
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
   <focus>
-    <focusNew>no</focusNew>
+    <focusNew>yes</focusNew>
     <followMouse>no</followMouse>
     <focusDelay>0</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
