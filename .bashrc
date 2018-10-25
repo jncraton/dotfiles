@@ -51,6 +51,7 @@ alias weather='curl wttr.in/'
 #alias rclone='rclone --backup-dir ~/.rclonebak'
 alias f='find . -not -ipath "*/.git/*" -not -ipath "*/.cargo/*" -not -ipath "*/node_modules/*" -not -ipath "*/__pycache__/*" -not -iname "*.pyc"'
 alias spellcheck='aspell -c --dont-backup'
+alias gcalcli='gcalcli --calendar "RD Tasks" --calendar "Jon - Main" --calendar "Jon and Karin" --calendar "Residence Life and Programming"'
 
 export PATH=$PATH:~/bin:~/.local/bin
 export EDITOR="/usr/local/bin/micro"
