@@ -1,4 +1,4 @@
-personal_ws-1.1 en 79 
+personal_ws-1.1 en 82 
 redeclared
 ptr
 sympy
@@ -16,6 +16,7 @@ GitHub
 len
 cryptographic
 DFT
+CLO
 grapheme
 seaborn
 pseudocode
@@ -39,8 +40,8 @@ paralellize
 CSC
 goto
 enums
-sns
 eigenvects
+sns
 src
 tuples
 recurses
@@ -57,6 +58,7 @@ JS
 boolean
 tuple
 dropbox
+Smithers
 runtime
 truthiness
 Craton
@@ -67,6 +69,7 @@ hashable
 interoperability
 downsample
 doctest
+Houghton
 np
 frac
 vmatrix
