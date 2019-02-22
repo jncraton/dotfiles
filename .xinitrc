@@ -28,4 +28,6 @@ synclient CoastingSpeed=0
 killall syndaemon
 syndaemon -d -t
 
+xinput --set-prop "SynPS/2 Synaptics TouchPad" "Device Accel Constant Deceleration" 1.5
+
 exec openbox-session
