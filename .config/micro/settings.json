@@ -40,7 +40,7 @@
     "pluginrepos": [],
     "rmtrailingws": false,
     "ruler": true,
-    "savecursor": false,
+    "savecursor": true,
     "savehistory": false,
     "saveundo": false,
     "scrollbar": true,
