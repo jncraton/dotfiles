@@ -1,4 +1,4 @@
-personal_ws-1.1 en 82 
+personal_ws-1.1 en 88 
 redeclared
 ptr
 sympy
@@ -7,8 +7,10 @@ th
 subprocess
 dct
 Downsampling
+INFS
 matplotlib
 ABI
+pagenumbering
 piecewise
 Haskell
 Javascript
@@ -19,9 +21,11 @@ DFT
 CLO
 grapheme
 seaborn
+inwardness
 pseudocode
 summand
 tmpsrc
+understandability
 linalg
 scalable
 GC
@@ -35,6 +39,7 @@ whitespace
 xlabel
 eigenvector
 cpp
+cyber
 fftpack
 paralellize
 CSC
@@ -75,6 +80,7 @@ frac
 vmatrix
 Theora
 os
+hackathon
 LAPACK
 allclose
 radix
