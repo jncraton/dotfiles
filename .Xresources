@@ -4,7 +4,7 @@ xterm*termName: xterm-256color
 xterm*metaSendsEscape: true
 xterm*eightBitInput: false
 
-xterm*faceName:Ubuntu Mono:size=9:antialias=true
+xterm*faceName:Nono Sans Mono CJK JP:size=9:antialias=true
 
 ! Solarized color scheme for the X Window System
 ! http://ethanschoonover.com/solarized
