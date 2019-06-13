@@ -32,8 +32,12 @@ alias gotty='gotty --permit-write --address 127.0.0.1 tmux'
 alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off'
 alias xzmax='XZ_OPT=-9e tar --verbose --create --xz --file'
 alias ls='ls -gh --color=auto'
-alias rm='rm --one-file-system -I'
 alias n='TERM=xterm micro'
+
+# Safety aliases
+alias rm='rm --one-file-system -I'
+alias mv='mv -i'
+alias cp='cp -i'
 
 # Format 250 is Opus@70k, 249 is Opus@50k,251 is Opus@160k
 alias ydopus='youtube-dl --format 250/251/249 --audio-format opus --extract-audio --ignore-errors'
