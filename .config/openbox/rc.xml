@@ -19,44 +19,40 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>1977-Black</name>
-    <titleLayout>CMIL</titleLayout>
-    <keepBorder>yes</keepBorder>
-    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
-      <size>8</size>
-      <weight>bold</weight>
+      <name>Noto Sans Mono CJK JP</name>
+      <size>9</size>
+      <weight>normal</weight>
       <slant>normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
-      <size>8</size>
-      <weight>bold</weight>
+      <name>Noto Sans Mono CJK JP</name>
+      <size>9</size>
+      <weight>normal</weight>
       <slant>normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>sans</name>
+      <name>Noto Sans Mono CJK JP</name>
       <size>9</size>
       <weight>normal</weight>
       <slant>normal</slant>
     </font>
     <font place="MenuItem">
-      <name>sans</name>
+      <name>Noto Sans Mono CJK JP</name>
       <size>9</size>
       <weight>normal</weight>
       <slant>normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>sans</name>
+      <name>Noto Sans Mono CJK JP</name>
       <size>9</size>
-      <weight>bold</weight>
+      <weight>normal</weight>
       <slant>normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>sans</name>
+      <name>Noto Sans Mono CJK JP</name>
       <size>9</size>
-      <weight>bold</weight>
+      <weight>normal</weight>
       <slant>normal</slant>
     </font>
   </theme>
