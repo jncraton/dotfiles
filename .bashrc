@@ -24,7 +24,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-PS1='\u@\h:\w\$ '
+PS1='\w\$ '
 
 # aliases
 alias vlcweb='cvlc --intf http --http-password letmein'
