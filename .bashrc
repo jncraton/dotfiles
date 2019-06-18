@@ -34,8 +34,9 @@ alias watch='watch -n .1'
 alias gotty='gotty --permit-write --address 127.0.0.1 tmux'
 alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off'
 alias xzmax='XZ_OPT=-9e tar --verbose --create --xz --file'
-alias ls='ls -gh --color=auto'
 alias n='TERM=xterm micro'
+
+alias ls='ls -g --human-readable --file-type --color=auto'
 
 # Safety aliases
 alias rm='rm --one-file-system -I'
