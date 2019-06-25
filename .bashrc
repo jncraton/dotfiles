@@ -25,7 +25,7 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Basic prompt, but with a hack to always keep the prompt at the bottom
-PS1='\[\e[$LINES;1H\]\n\w$ '
+PS1='\n\w$ '
 
 # aliases
 alias vlcweb='cvlc --intf http --http-password letmein'
