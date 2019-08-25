@@ -7,5 +7,6 @@
   "CtrlH": "DeleteWordLeft",
   "CtrlBackslash": "NextTab,NextSplit",
   "CtrlTab": "NextTab,NextSplit",
+  "CtrlE": "CursorEnd",
   "Alt-g": "UnbindKey"
 }
