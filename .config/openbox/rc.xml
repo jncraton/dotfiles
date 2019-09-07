@@ -110,6 +110,11 @@
         <command>~/bin/launch xterm xterm</command>
       </action>
     </keybind>
+    <keybind key="C-A-d">
+      <action name="Execute">
+        <command>~/bin/launch evince evince</command>
+      </action>
+    </keybind>
     <keybind key="W-p">
       <action name="Execute">
         <command>~/bin/launch lxrandr lxrandr</command>
