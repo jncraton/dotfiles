@@ -3,6 +3,10 @@
         "indentchar": "\t",
         "tabstospaces": false
     },
+    "*.py": {
+        "tabsize": 4,
+        "tabstospaces": true
+    },
     "*.tsv": {
         "indentchar": "\t",
         "tabsize": 4,
