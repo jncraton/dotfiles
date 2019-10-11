@@ -1,10 +1,10 @@
 Video
   Driver:OpenGL
   Synchronize: false
-  Shader:Blur
+  Shader:None
   ScaleMode: 1
   AspectCorrection: true
-  ColorEmulation:true
+  ColorEmulation:false
   MaskOverscan: false
     Horizontal: 8
     Vertical: 8
@@ -12,21 +12,21 @@ Video
   Gamma:100
   Luminance:100
   StartFullScreen: false
-  BlurEmulation:true
+  BlurEmulation:false
   ScanlineEmulation:false
   Overscan
     Horizontal:12
     Vertical:8
   Windowed
-    AspectCorrection:true
-    IntegralScaling:true
-    Adaptive:true
+    AspectCorrection:false
+    IntegralScaling:false
+    Adaptive:false
     Scale:Small
       Small:640x480
       Medium:960x720
       Large:1280x960
   Fullscreen
-    AspectCorrection:true
+    AspectCorrection:false
     IntegralScaling:false
     Exclusive:false
 Audio
@@ -38,7 +38,7 @@ Audio
   Volume:100
   Mute: false
   Device:default
-  Exclusive:true
+  Exclusive:false
   Balance:50
   Reverb
     Enable:false
@@ -295,15 +295,15 @@ SuperGrafx
 GameBoy
   Hardware
     Controls
-      Up
-      Down
-      Left
-      Right
-      B
-      A
-      Select
-      Start
-      X-axis
+      Up:0x7d62a65905832060/0/1/Lo
+      Down:0x7d62a65905832060/0/1/Hi
+      Left:0x7d62a65905832060/0/0/Lo
+      Right:0x7d62a65905832060/0/0/Hi
+      B:0x7d62a65905832060/3/3
+      A:0x7d62a65905832060/3/1
+      Select:0x7d62a65905832060/3/6
+      Start:0x7d62a65905832060/3/7
+      X-axis:0xe46bf7e300790006/0/0
       Y-axis
       Rumble
 GameBoyColor
@@ -323,16 +323,16 @@ GameBoyColor
 GameBoyAdvance
   Hardware
     Controls
-      Up
-      Down
-      Left
-      Right
-      B
-      A
-      L
-      R
-      Select
-      Start
+      Up:0x7d62a65905832060/0/1/Lo
+      Down:0x7d62a65905832060/0/1/Hi
+      Left:0x7d62a65905832060/0/0/Lo
+      Right:0x7d62a65905832060/0/0/Hi
+      B:0x7d62a65905832060/3/3
+      A:0x7d62a65905832060/3/1
+      L:0x7d62a65905832060/3/4
+      R:0x7d62a65905832060/3/5
+      Select:0x7d62a65905832060/3/6
+      Start:0x7d62a65905832060/3/7
       Rumble
 GameGear
   Hardware
@@ -379,7 +379,7 @@ Hotkey
   LoadQuickState:0x1/0/49
   DecrementQuickState:None
   IncrementQuickState:None
-  PauseEmulation:None
+  PauseEmulation:0x1/0/50
   FastForward:0x1/0/88
   SoftReset:None
   PowerCycle:0x1/0/52
