@@ -67,5 +67,4 @@ alias gcaladd='\gcalcli --calendar "Main" quick'
 export PATH=$PATH:~/bin:~/.local/bin
 export EDITOR="/usr/local/bin/micro"
 
-transset -a .8 > /dev/null 2> /dev/null
 GLOBIGNORE=".:.."
