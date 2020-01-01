@@ -85,10 +85,16 @@
       </action>
     </keybind>
     <keybind key="A-Tab">
-      <action name="NextWindow"/>
+      <action name="NextWindow">
+        <interactive>no</interactive>
+        <raise>yes</raise>
+      </action>
     </keybind>
     <keybind key="A-S-Tab">
-      <action name="PreviousWindow"/>
+      <action name="PreviousWindow">
+        <interactive>no</interactive>
+        <raise>yes</raise>
+      </action>
     </keybind>
     <keybind key="C-A-b">
       <action name="Execute">
