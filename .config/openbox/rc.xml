@@ -86,13 +86,13 @@
     </keybind>
     <keybind key="A-Tab">
       <action name="NextWindow">
-        <interactive>no</interactive>
+        <interactive>yes</interactive>
         <raise>yes</raise>
       </action>
     </keybind>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
-        <interactive>no</interactive>
+        <interactive>yes</interactive>
         <raise>yes</raise>
       </action>
     </keybind>
