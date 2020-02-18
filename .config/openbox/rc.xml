@@ -187,23 +187,10 @@
       </action>
     </keybind>
     <keybind key="W-Down">
-      <action name="If">
-        <query target="focus">
-          <maximizedhorizontal>no</maximizedhorizontal>
-          <maximizedvertical>yes</maximizedvertical>
-        </query>
-        <then>
-          <action name="Unmaximize"/>
-          <action name="MoveResizeTo">
-            <y>-0</y>
-            <height>50%</height>
-          </action>
-        </then>
-        <else>
-          <action name="MoveResizeTo">
-            <monitor>next</monitor>
-          </action>
-        </else>
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <y>-0</y>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-Left">
@@ -213,6 +200,9 @@
         <width>50%</width>
         <height>100%</height>
       </action>
+      <action name="Maximize">
+        <direction>vertical</direction>
+      </action>
     </keybind>
     <keybind key="W-Right">
       <action name="Unmaximize"/>
@@ -221,7 +211,36 @@
         <width>50%</width>
         <height>100%</height>
       </action>
+      <action name="Maximize">
+        <direction>vertical</direction>
+      </action>
     </keybind>
+    <!--
+    <keybind key="A-1">
+      <action name="DirectionalTargetWindow">
+        <direction>west</direction>
+        <finalactions>
+          <action name="Focus"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="A-2">
+      <action name="DirectionalTargetWindow">
+        <direction>northeast</direction>
+        <finalactions>
+          <action name="Focus"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="A-3">
+      <action name="DirectionalTargetWindow">
+        <direction>southeast</direction>
+        <finalactions>
+          <action name="Focus"/>
+        </finalactions>
+      </action>
+    </keybind>
+    -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>amixer set Master 10%+</command>
