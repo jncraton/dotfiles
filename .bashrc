@@ -49,7 +49,7 @@ alias ydopus='youtube-dl --format 250/251/249 --audio-format opus --extract-audi
 
 alias ydmp3='youtube-dl -f bestaudio -i -x --audio-format mp3'
 alias ydavc='youtube-dl -f worstvideo[ext=mp4]+worstaudio[ext=m4a]'
-alias feh='feh -Z -F'
+alias feh='feh --auto-zoom --fullscreen'
 alias smbclient='smbclient -U houghton\\jonathan.craton'
 alias aria2c16='aria2c -j 16 -x 16 -s 16 -k 4M'
 alias clip='xclip -i -selection clipboard'
