@@ -1,12 +1,9 @@
 {
-  "CtrlG": "JumpLine",
-  "CtrlW": "Quit",
-  "F5": "ShellMode",
-  "CtrlLeft": "WordLeft",
-  "CtrlRight": "WordRight",
-  "CtrlH": "DeleteWordLeft",
-  "CtrlBackslash": "NextTab,NextSplit",
-  "CtrlTab": "NextTab,NextSplit",
-  "CtrlE": "CursorEnd",
-  "Alt-g": "UnbindKey"
+    "CtrlE": "CursorEnd",
+    "CtrlG": "JumpLine",
+    "CtrlH": "DeleteWordLeft",
+    "CtrlLeft": "WordLeft",
+    "CtrlRight": "WordRight",
+    "CtrlW": "Quit",
+    "F5": "ShellMode"
 }
