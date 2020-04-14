@@ -1,5 +1,6 @@
 {
-    "CtrlE": "CursorEnd",
+    "Alt-/": "lua:comment.comment",
+    "CtrlE": "CommandMode",
     "CtrlG": "JumpLine",
     "CtrlH": "DeleteWordLeft",
     "CtrlLeft": "WordLeft",
