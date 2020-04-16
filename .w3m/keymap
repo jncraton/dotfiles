@@ -1,0 +1,5 @@
+keymap M-LEFT PREV
+keymap M-RIGHT NEXT
+
+keymap LEFT PREV
+keymap RIGHT NEXT
