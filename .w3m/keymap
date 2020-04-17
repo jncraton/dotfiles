@@ -1,5 +1,3 @@
-keymap M-LEFT PREV
-keymap M-RIGHT NEXT
-
-keymap LEFT PREV
-keymap RIGHT NEXT
+# Alt+Left become capital D
+keymap D PREV
+keymap C NEXT
