@@ -36,3 +36,13 @@ include "%L"
 <Multi_key> <d> <r> : "ℝ" U211D
 <Multi_key> <d> <n> : "ℕ" U2115
 <Multi_key> <d> <z> : "ℤ" U2124
+
+<Multi_key> <e> <s> : "😊" U1F60A # Smile
+<Multi_key> <e> <f> : "🙁" U1F641 # Frown
+<Multi_key> <e> <t> : "🤔" U1F914 # Thinking
+<Multi_key> <e> <l> : "🤣" U1F923 # Laugh
+<Multi_key> <e> <h> : "💓" U1F493 # Heart
+<Multi_key> <e> <k> : "😘" U1F618 # Kiss
+<Multi_key> <e> <p> : "🙏" U1F64F # Please
+<Multi_key> <e> <u> : "👍" U1F44D # Up
+<Multi_key> <e> <d> : "👎" U1F44E # Down
