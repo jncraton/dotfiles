@@ -243,12 +243,18 @@
     -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer set Master 10%+</command>
+        <command>amixer sset Master 10%+</command>
+      </action>
+      <action name="Execute">
+        <command>amixer -D pulse sset Master 10%+</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer set Master 10%-</command>
+        <command>amixer sset Master 10%-</command>
+      </action>
+      <action name="Execute">
+        <command>amixer -D pulse sset Master 10%-</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
