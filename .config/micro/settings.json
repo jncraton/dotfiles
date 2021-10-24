@@ -3,6 +3,10 @@
         "indentchar": "\t",
         "tabstospaces": false
     },
+    "*.in": {
+        "indentchar": "\t",
+        "tabstospaces": false
+    },
     "*.py": {
         "tabsize": 4,
         "tabstospaces": true
@@ -46,6 +50,7 @@
     "matchbrace": true,
     "mkparents": false,
     "mouse": true,
+    "parsecursor":true,
     "paste": false,
     "pluginchannels": [
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
