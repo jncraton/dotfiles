@@ -5,6 +5,7 @@
     "CtrlH": "DeleteWordLeft",
     "CtrlLeft": "WordLeft",
     "CtrlRight": "WordRight",
+    "CtrlUnderscore": "lua:comment.comment",
     "CtrlW": "Quit",
     "F5": "ShellMode"
 }
