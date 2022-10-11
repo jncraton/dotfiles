@@ -1,0 +1,5 @@
+--sponsorblock-remove all
+--prefer-free-formats 
+# https://github.com/yt-dlp/yt-dlp#video-format-options
+# Prefer best codec, lowest res no worse than 360, and abr of around 75kbps
+--format-sort "codec,+res:360,abr:75"
