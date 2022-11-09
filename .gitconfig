@@ -7,3 +7,14 @@
 	lg = log --oneline --decorate --all --graph --stat
 [core]
 	filemode = false
+	quotePath = false
+	commitGraph = true
+[receive]
+	advertisePushOptions = true
+	procReceiveRefs = refs/for
+[gc]
+	writeCommitGraph = true
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
