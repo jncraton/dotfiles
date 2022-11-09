@@ -4,6 +4,9 @@ xbacklight -set 1
 pulseaudio --start
 xhost +
 
+# Disable system beep
+xset -b
+
 amixer set Master 0%
 amixer set Master unmute
 amixer set Headphone 100%
