@@ -49,5 +49,6 @@
     "statusformatr": "$(line),$(col) ",
     "tabsize": 2,
     "tabstospaces": true,
-    "termtitle": false
+    "termtitle": false,
+    "xterm": true
 }
