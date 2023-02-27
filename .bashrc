@@ -28,41 +28,16 @@ shopt -s checkwinsize
 PS1='\n\w$ '
 
 # aliases
-alias vlcweb='cvlc --intf http --http-password letmein'
-alias gistup='gistup --private'
-alias pandoc='pandoc --extract-media . '
-alias watch='watch -n .1'
-alias gotty='gotty --permit-write --address 127.0.0.1 tmux'
-alias 7zmax='7z a -r -mx=9 -myx=9 -ms=on -mf=on -mtm=off'
-alias xzmax='XZ_OPT=-9e tar --verbose --create --xz --file'
 alias n='TERM=xterm micro'
-
 alias ls='ls -g --human-readable --file-type --color=auto'
 
 # Safety aliases
 alias rm='rm --one-file-system -I'
 alias mv='mv -i'
 alias cp='cp -i'
-
-# Format 250 is Opus@70k, 249 is Opus@50k,251 is Opus@160k
-alias ydopus='youtube-dl --format 250/251/249 --audio-format opus --extract-audio --ignore-errors'
-
-alias ydmp3='youtube-dl -f bestaudio -i -x --audio-format mp3'
-alias ydavc='youtube-dl -f worstvideo[ext=mp4]+worstaudio[ext=m4a]'
 alias feh='feh --auto-zoom --fullscreen'
-alias smbclient='smbclient -U houghton\\jonathan.craton'
 alias aria2c16='aria2c -j 16 -x 16 -s 16 -k 4M'
 alias clip='xclip -i -selection clipboard'
-alias vera-mount='veracrypt "/dropbox/share/Jon and Karin/finance/secure.hc" --mount-options=timestamp'
-alias comp-pdf='gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -sOutputFile=-'
-alias weather='curl wttr.in/'
-#alias rclone='rclone --exclude "*.pyc" --exclude "__pycache__"'
-#alias rclone='rclone --backup-dir ~/.rclonebak'
-alias f='find . -not -ipath "*/.git/*" -not -ipath "*/.cargo/*" -not -ipath "*/node_modules/*" -not -ipath "*/__pycache__/*" -not -iname "*.pyc"'
-alias spellcheck='aspell -c --dont-backup'
-alias gcalcli='gcalcli --defaultCalendar "Main" --defaultCalendar "RD Tasks" --defaultCalendar "Jon and Karin" --defaultCalendar "Residence Life and Programming" --nocolor'
-alias gcalnext='gcalcli remind 120 "echo %s"'
-alias gcaladd='\gcalcli --calendar "Main" quick'
 
 export PATH=$PATH:~/bin:~/.local/bin
 export EDITOR="/usr/local/bin/micro"
