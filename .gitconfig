@@ -6,7 +6,7 @@
 [alias]
 	lg = log --oneline --decorate --all --graph --stat
 [core]
-	filemode = false
+	fileMode = false
 	quotePath = false
 	commitGraph = true
 [receive]
