@@ -1,2 +1,8 @@
 .config/neomutt
-.config/mail.yml
+.config/mail.yaml
+.irssi
+.remmina
+.vba/*.sav
+.vba/*.sgm
+.w3m/history
+etc
