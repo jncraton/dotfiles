@@ -40,6 +40,6 @@ alias aria2c16='aria2c -j 16 -x 16 -s 16 -k 4M'
 alias clip='xclip -i -selection clipboard'
 
 export PATH=$PATH:~/bin:~/.local/bin
-export EDITOR="/usr/local/bin/micro"
+export EDITOR="micro"
 
 GLOBIGNORE=".:.."
